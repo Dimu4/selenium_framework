@@ -1,0 +1,13 @@
+{
+    "empty_login":{
+    "login":"",
+    "password":"root1234"},
+
+    "empty_password":{
+        "login":"administrator",
+        "password":""},
+
+    "short_login":{
+        "login":"a",
+        "password":"root1234"}
+}

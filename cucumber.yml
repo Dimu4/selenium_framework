@@ -1,0 +1,4 @@
+show_states: --format html --out report.html --format pretty --tags @print_states
+find_zip: --format html --out report.html --format pretty --tags @zip
+signin: --format html --out report.html --format pretty --tags @signin
+
