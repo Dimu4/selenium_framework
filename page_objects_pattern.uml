@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Ruby</ID>
+  <OriginalElement>Usps</OriginalElement>
+  <nodes>
+    <node x="2.9100529100529116" y="-144.27513227513225">PageActions</node>
+    <node x="0.0" y="852.0">HomePage</node>
+    <node x="0.0" y="295.0">SignIn</node>
+    <node x="11.640211640211646" y="86.03703703703707">Usps</node>
+    <node x="292.4603174603175" y="283.73015873015873">FindZipCodePage</node>
+  </nodes>
+  <notes>
+    <note x="239.80706349206355" y="-99.95502645502654">
+      <node>PageActions</node>
+      <value>PageActions is a super class which methods are available for reusability in all classes that  extends this class\nUsps, FindZipCodePage, HomePage, and SingIn class are all extending PageActions and thus inherits all its functionality</value>
+      <edge>
+        <point x="0.0" y="0.0" />
+        <point x="0.0" y="0.0" />
+      </edge>
+    </note>
+    <note x="204.39050264550258" y="116.53703703703701">
+      <node>Usps</node>
+      <value>Usps class has methods that construct objects for each page of the  USPS webiste. \nInside each method we are calling .new Ruby method that constant an object for a page class and passing WebDriver instance into that page initialize method. \nSince each class does not have explicitly defined initialize method, it inherits this method from its super class -- PageActions.</value>
+      <edge>
+        <point x="0.0" y="0.0" />
+        <point x="0.0" y="0.0" />
+      </edge>
+    </note>
+    <note x="629.092724867725" y="359.3650793650793">
+      <node>FindZipCodePage</node>
+      <value>FindZipCodePage class has instance methods that only define webpage elements. \nNotice that we are only keeping elements definitions that relates to that particular page. \nIf we want to get the text out of the particular UI element, you would call \nusps.find_zip_code_page.city_field.text. from step_definitions. SingIn and HomePage \nclasses are designed with the same logic.</value>
+      <edge>
+        <point x="0.0" y="0.0" />
+        <point x="0.0" y="0.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.6872727272727273" x="603.5" y="207.53174603174602" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+
