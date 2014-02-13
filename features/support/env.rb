@@ -62,5 +62,10 @@ After do |scenario|
   end
 end
 
+#another cucumber hook that enable you to perform final cleanup
+# after all scenarios have executed
+at_exit do
+  $desktop_browser.quit
+end
 
 
