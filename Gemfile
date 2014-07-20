@@ -1,4 +1,4 @@
-source :rubygems
+source 'http://rubygems.org'
 
 gem "selenium-webdriver"
 gem "rspec"
