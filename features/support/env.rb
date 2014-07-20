@@ -1,6 +1,6 @@
 require "selenium-webdriver"
 require "rspec"
-require "debugger"
+#require "debugger"
 require "json"
 
 require File.join(File.dirname(__FILE__), "page_actions.rb")
